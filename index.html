@@ -10,22 +10,22 @@
     <button tabindex="-1" id="bocchi2">NO im not</button>
     <script>
         const button2 = document.getElementById('bocchi2');
-        let left = 40;
+        let left = 45;
         button2.addEventListener('mouseover', function() {
-          if(left == 40){
-            left = 35;
-          }else{
+          if(left == 45){
             left = 40;
+          }else{
+            left = 45;
           }
           this.style.left = left + '%';
         });
         if (window.matchMedia("(max-width: 700px)").matches){
-          let left = 30;
+          let left = 35;
           button2.addEventListener('mouseenter', function() {
-          if(left == 30){
-            left = 15;
+          if(left == 35){
+            left = 20;
           }else{
-            left = 30;
+            left = 35;
           }
           this.style.left = left + '%';
         });
@@ -43,7 +43,7 @@
 
 
 
-    <button id="bocchi1" onclick="openModal()">ye i know</button>
+    <button id="bocchi1" onclick="openModal()">yes i know</button>
 
 
     <dialog id="dialog">
