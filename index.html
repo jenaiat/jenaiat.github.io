@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for sarina</title>
+    <link rel="stylesheet" href="partner.css">
+
+    <button tabindex="-1" id="bocchi2">NO im not</button>
+    <script>
+        const button2 = document.getElementById('bocchi2');
+        let left = 40;
+        button2.addEventListener('mouseover', function() {
+          if(left == 40){
+            left = 35;
+          }else{
+            left = 40;
+          }
+          this.style.left = left + '%';
+        });
+        if (window.matchMedia("(max-width: 700px)").matches){
+          let left = 30;
+          button2.addEventListener('mouseenter', function() {
+          if(left == 30){
+            left = 15;
+          }else{
+            left = 30;
+          }
+          this.style.left = left + '%';
+        });
+        }
+        </script>
+        
+
+</head>
+<body>
+    
+<p class="heading">you are the cutest girl in the world</p>
+<img class="pic" src="https://giphy.com/embed/zZMTVkTeEfeEg"
+<title>Bocchi</title>
+
+
+
+
+    <button id="bocchi1" onclick="openModal()">ye i know</button>
+
+
+    <dialog id="dialog">
+        <img  class="pic1" src="pic.jpg" width="210px" height="250px" alt="">
+        <br/>
+        <center><p>hehe</p></center>
+        
+    <button onclick="closeModal()" class="right">close ><</3></button>
+    </dialog>
+
+
+<script>
+    var dailog = document.getElementById("dialog"); 
+
+function openModal() { 
+    
+      dailog.showModal();
+} 
+         
+function closeModal() { 
+    dailog.close(); 
+}
+</script>
+
+
+</body>
+</html>
